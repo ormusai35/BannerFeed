@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>banner feed</title>
+</head>
+
+<body>
+  
+  <div id='banners-list'></div>
+
+  <form id="feed-form" onsubmit="creatNewBanner(); return false">
+    <input id="image-url" type="text" name="" value="" placeholder="Image URL..." required>
+    <input id="redirect-link" type="text" name="" value="" placeholder="Redirect link..." required>
+    <button type="submit" name="submitButton">Submit</button>
+    <button type="button" name="saveButton" onclick="localStorageSave()">Save</button>
+    <button type="button" name="clearButton" onclick="localStorageClear()">Clear</button>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

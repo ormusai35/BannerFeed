@@ -1,0 +1,114 @@
+body {
+  font-family: 'Lato';
+}
+
+
+
+form {
+  display: grid;
+  grid-column-gap: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px #00000024;
+  border-radius: 10px;
+  font-size: 18px;
+  grid-template-columns: 1fr 1fr 0.7fr 0.7fr 0.7fr;
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  width: 75%
+}
+
+form input, form button {
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: unset;
+}
+
+form button {
+  color: white;
+}
+
+form button[type='submit'] {
+  background: linear-gradient(242deg, #ff0075 0%, rgba(255,255,255,0) 300%);
+  transition-duration: 0.5s;
+}
+form button[type='submit']:hover{
+  background-color: #FF0075;
+  transition-duration: 0.5s;
+}
+
+
+
+form button[name='saveButton'] {
+  background: linear-gradient(242deg, #3e8b5e 0%, rgba(255,255,255,0) 300%);
+  transition-duration: 0.5s;
+}
+
+form button[name='saveButton']:hover{
+  background-color: #3e8b5e;
+  transition-duration: 0.5s;
+}
+
+form button[name='clearButton'] {
+  background: linear-gradient(242deg, #1c1c1c 0%, rgba(255,255,255,0) 300%);
+  transition-duration: 0.5s;
+}
+
+form button[name='clearButton']:hover{
+    background-color: #1c1c1c;
+    transition-duration: 0.5s;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+form input {
+  background-color: #efefef;
+}
+
+form input:focus {
+  background-color: #e3e3e3;
+  outline: none;
+}
+
+.banner {
+  height: 320px;
+  width: 24vw;
+}
+
+#banners-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
+}
+
+#banners-list img {
+  object-fit: cover;
+}
+
+#alert {
+  height: 200px;
+  width: 400px;
+  background-color: #00000085;
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 30px;
+  font-size: 40px;
+  font-weight: 500;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#alert p {
+  display: inline;
+}
